@@ -1,0 +1,356 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 시작 부분 */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+#container {
+  border: 1px solid red;
+  width: 1050px;
+  height: 7976.44px;
+  margin: 0 auto;
+}
+
+#header {
+  height: 156px;
+  width: 1050px;
+  margin: 0 auto;
+  color: black;
+}
+#menu {
+  width: 1050px;
+  height: 26px;
+  margin: 0 auto;
+}
+#menu * {
+  font-family: noto sans;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+#menu .list_menu {
+  float: right;
+  position: relative;
+  z-index: 400;
+}
+
+#menu .list_menu_join {
+  float: left;
+  padding-right: 11px;
+  height: 26px;
+  padding: 0 22px 0 10px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+#menu .list_menu .login {
+  padding: 0 16px 0 15px;
+  color: #333;
+}
+
+#menu .list_menu .gkgk {
+  padding-right: 13px;
+  color: #333;
+}
+
+#headerLogo {
+  border: 2px solid black;
+  height: 63px;
+  margin: 0 auto;
+}
+#headerLogo .logo img {
+  width: 103px;
+  height: 79px;
+  margin: 0 auto;
+  display: block;
+}
+
+#menubar {
+  border: 1px solid red;
+  width: 1050px;
+  height: 56px;
+  margin: 0 auto;
+}
+#menubar .gnb_main ul {
+  margin: 0 auto;
+  overflow: hidden;
+  font-weight: 500;
+  float: left;
+}
+#menubar .gnb_main ul li {
+  float: left;
+  width: 124px;
+  height: 55px;
+  padding: 16px 0 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 20px;
+  text-align: center;
+}
+#menubar .side_search .inp_search {
+  width: 242px;
+  height: 36px;
+  margin-top: 10px;
+  padding: 0 40px 0 14px;
+  border: 1px solid #f7f7f6;
+  border-radius: 18px;
+  background-color: #f7f7f7;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 12px;
+  color: #666;
+  line-height: 16px;
+  outline: none;
+}
+#menubar .btn-search {
+  position: relative;
+  right: 5px;
+  top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+#menubar .btn_cart {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: red;
+}
+
+#menubar .btn_location {
+  overflow: hidden;
+  position: relative;
+  right: 51px;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  border: 0 none;
+  font-size: 0;
+  text-indent: -9999px;
+  background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1)
+    no-repeat 50% 50%;
+}
+
+#main {
+  height: 7381.33px;
+  width: 1050px;
+  border: 1px solid black;
+}
+
+#content {
+  border: 2px solid gray;
+  height: 680px;
+  width: 1050px;
+  margin: 0 auto;
+  background: url(https://res.kurly.com/images/event/2021/0901/thanks/pc/img_main.jpg)
+    no-repeat 50% 0;
+}
+#content .view_event {
+  position: relative;
+  width: 1050px;
+  margin: 0 auto;
+}
+.screen {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+#view-tab {
+  background-color: #fff;
+}
+#view_tab .view_ev {
+  width: 100%;
+  background-color: #a586b4;
+}
+#view_tab .view_ev .btn_recomm {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #e7e3da;
+}
+#view_tab img {
+  vertical-align: top;
+}
+
+#view_tab .tab {
+  overflow: hidden;
+  width: 1050px;
+  margin: 0 auto;
+}
+#view_tab .tab li {
+  float: left;
+}
+
+#view_tab .tab a {
+  display: block;
+  overflow: hidden;
+  width: 352px;
+  height: 56px;
+  text-indent: -9999px;
+  background: url(https://res.kurly.com/images/event/2021/0901/thanks/pc/tab_menu.jpg)
+    no-repeat;
+}
+#view_tab .tab_menu2 a {
+  width: 348px;
+  background-position-x: -352px;
+}
+#view_tab .tab_menu3 a {
+  width: 350px;
+  background-position-x: -700px;
+}
+
+#merchandise1 {
+  border: 3px solid black;
+  height: 146px;
+  margin: 0 auto;
+}
+
+#merchandise1-pic {
+  border: 1px solid red;
+  height: 506px;
+}
+
+#merchandise2 {
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+#merchandise2-pic {
+  border: 1px solid darkgreen;
+  width: 1050px;
+}
