@@ -261,7 +261,7 @@ ul {
 }
 
 #main {
-  height: 8581px;
+  height: 8610px;
   width: 1050px;
   border: 3px solid black;
   border-bottom: 1px solid #f7f7f7;
@@ -272,7 +272,7 @@ ul {
 }
 #content {
   border: 2px solid gray;
-  height: 8581px;
+  height: 9581px;
   width: 1050px;
   padding-bottom: 0;
 }
@@ -824,9 +824,177 @@ ul {
   width: 175px;
   height: 175px;
 }
-
-.main_type4 .list_goods .bx-viewport .footer {
-  border: 3px solid rgb(8, 240, 8);
+.main_type4 .bnr1 {
+  padding: 39px 0 100px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+}
+.main_type4 .bnr1 .txt1 {
+  display: block;
+  font-weight: 400;
+  color: #999;
+}
+.bnr_main {
   width: 1050px;
   margin: 0 auto;
+}
+.bnr_main .link {
+  background-image: url(https://img-cf.kurly.com/shop/data/main/15/pc_img_1629447526.jpg);
+  display: block;
+  min-height: 140px;
+  background-color: #eee;
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+#footer {
+  border: 4px solid skyblue;
+  width: 1050px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+#footer .inner_footer {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+#footer .foot_cc {
+  float: left;
+  width: 534px;
+}
+#footer .tit_cc {
+  padding: 29px 0 2px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+  line-height: 24px;
+}
+#footer .cc_call {
+  padding-top: 20px;
+}
+/* h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+} */
+#footer .cc_call .call {
+  padding-top: 4px;
+  font-weight: 800;
+  font-size: 28px;
+  color: #333;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+#footer .cc_view .call {
+  float: left;
+  width: 140px;
+  margin-right: 16px;
+}
+#footer .foot_cc .list_li {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+#footer .foot_cc .list_li dt {
+  display: block;
+}
+#footer .foot_cc .list_li dd {
+  color: #999;
+}
+#footer .cc_view {
+  overflow: hidden;
+  padding-top: 16px;
+}
+#footer .cc_kakao .call {
+  height: 40px;
+  padding-top: 7px;
+  margin-top: 3px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  text-align: center;
+}
+#footer .foot_cc .list_li {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+}
+#footer .cc_qna .call {
+  height: 40px;
+  padding-top: 7px;
+  margin-top: 3px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  text-align: center;
+}
+#footer .cc_bulkorder .call {
+  height: 40px;
+  padding-top: 7px;
+  margin-top: 3px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  text-align: center;
+}
+#footer .cc_bulkorder .txt {
+  padding-top: 9px;
+  color: #999;
+}
+#footer .company {
+  float: left;
+  padding-top: 29px;
+  font-size: 12px;
+  color: #999;
+  line-height: 20px;
+}
+#footer .company .list {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 20px;
+}
+#footer .company .list li {
+  float: left;
+  padding-right: 16px;
+}
+#footer .company .list .link {
+  font-size: 14px;
+  color: #333;
+  line-height: 18px;
+}
+#footer .company .bar {
+  padding: 0 4px 0 3px;
+}
+#footer .company .link {
+  color: #5f0080;
+}
+#footer .company .copy {
+  display: block;
+  padding-top: 16px;
+  font-style: normal;
+  font-size: 10px;
+  color: #949296;
+  line-height: 22px;
+  letter-spacing: 0;
 }
