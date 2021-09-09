@@ -195,7 +195,7 @@ ul {
 
 #menubar {
   border: 1px solid rgb(55, 0, 255);
-  width: 1050px;
+  width: 1060px;
   height: 56px;
   margin: 0 auto;
 }
@@ -205,9 +205,17 @@ ul {
   font-weight: 500;
   float: left;
 }
+#menubar .gnb_main .menu1 .ico {
+  background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off_x2.png)
+    no-repeat;
+  float: left;
+  width: 16px;
+  height: 14px;
+  margin: 5px 14px 0 0;
+}
 #menubar .gnb_main ul li {
   float: left;
-  width: 124px;
+  width: 133px;
   height: 55px;
   padding: 16px 0 0;
   font-size: 16px;

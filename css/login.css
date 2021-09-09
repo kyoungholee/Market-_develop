@@ -1,0 +1,269 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 시작 부분 */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+#container {
+  border: 2px solid red;
+  width: 1050px;
+  height: 9581px;
+  margin: 0 auto;
+}
+
+#header {
+  height: 156px;
+  width: 1050px;
+  margin: 0 auto;
+  color: black;
+}
+#menu {
+  width: 1050px;
+  height: 26px;
+  margin: 0 auto;
+}
+#menu * {
+  font-family: noto sans;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+#menu .list_menu {
+  float: right;
+  position: relative;
+  z-index: 400;
+}
+
+#menu .list_menu_join {
+  float: left;
+  padding-right: 11px;
+  height: 26px;
+  padding: 0 22px 0 10px;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+#menu .list_menu .login {
+  padding: 0 16px 0 15px;
+  color: #333;
+}
+
+#menu .list_menu .gkgk {
+  padding-right: 13px;
+  color: #333;
+}
+
+#headerLogo {
+  border: 2px solid black;
+  height: 63px;
+  margin: 0 auto;
+}
+#headerLogo .logo img {
+  width: 103px;
+  height: 79px;
+  margin: 0 auto;
+  display: block;
+}
+
+#menubar {
+  border: 1px solid rgb(55, 0, 255);
+  width: 1060px;
+  height: 56px;
+  margin: 0 auto;
+}
+#menubar .gnb_main ul {
+  margin: 0 auto;
+  overflow: hidden;
+  font-weight: 500;
+  float: left;
+}
+#menubar .gnb_main .menu1 .ico {
+  background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off_x2.png)
+    no-repeat;
+  float: left;
+  width: 16px;
+  height: 14px;
+  margin: 5px 14px 0 0;
+}
+#menubar .gnb_main ul li {
+  float: left;
+  width: 133px;
+  height: 55px;
+  padding: 16px 0 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 20px;
+  text-align: center;
+}
+#menubar .side_search .inp_search {
+  width: 242px;
+  height: 36px;
+  margin-top: 10px;
+  padding: 0 40px 0 14px;
+  border: 1px solid #f7f7f6;
+  border-radius: 18px;
+  background-color: #f7f7f7;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 12px;
+  color: #666;
+  line-height: 16px;
+  outline: none;
+}
+#menubar .btn-search {
+  position: relative;
+  right: 5px;
+  top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+#menubar .btn_cart {
+  position: relative;
+  width: 30px;
+  height: 50px;
+  float: right;
+  background-color: red;
+}
+
+#menubar .btn_location {
+  overflow: hidden;
+  position: relative;
+  right: 51px;
+  top: -9px;
+  width: 36px;
+  height: 36px;
+  border: 0 none;
+  font-size: 0;
+  text-indent: -9999px;
+  background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1)
+    no-repeat 50% 50%;
+}

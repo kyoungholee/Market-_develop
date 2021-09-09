@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클론코딩 실습</title>
+
+    <link rel="stylesheet" href="../css/join.css">
+
+</head>
+<div>
+    <div id = "container">
+        <div id = "header">
+                <div id = "menu"> 
+                    <img src="https://res.kurly.com/pc/service/common/2011/delivery_210801.png" alt="샛별, 택배 배송안내"
+                    width ="121" height="22">
+                    <ul class="list_menu">
+                        <li class="list_menu_join">
+                            <a href="/" class="join">회원가입</a>
+                        </li>
+                        <li class="list_menu_join">
+                            <a href="/" class="login">로그인</a>
+                        </li>
+                        <li class="list_menu_join">
+                            <a href="/" class="gkgk">고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+
+            <div id = "headerLogo">
+                <h1 class = "logo">
+                    <a href="/" class="link_main">
+                        <img src ="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt ="마켓컬리 로고">
+                    </a>
+                </h1>
+            </div>
+
+
+                <div id ="menubar">
+                    <div class="gnb_main">
+                        <ul>
+                            <li class= "menu1">
+                                <a href="#none">
+                                    <span class="ico"></span>
+                                    <span class="txt">전체 카테고리</span>
+                                </a>
+                            </li>
+                            <li class= "menu2">신상품</li>
+                            <li class= "menu3">베스트</li>
+                            <li class= "menu4">알뜰쇼핑</li>
+                            <li class= "menu5">특가/헤택</li>
+                        </ul>
+                        <div class ="side_search">
+                            <form name="search" action="">
+                                <input name ="sword" type ="text" labal = "검색어" value="value"
+                                class = "inp_search" placeholder="검색어를 입력해주세요">
+
+                                <input type = "image" value="이미지"
+                                img src = "https://res.kurly.com/pc/service/common/1908/ico_search_x2.png" class="btn-search">
+
+                                <a href="/" class = "btn_cart">
+                                    <img src = "https://res.kurly.com/pc/service/common/2011/ico_cart.svg" alt="장바구니" >
+                                </a>
+                                <button type ="button" class="btn_location">
+                                    배송지 설정
+                                </button>
+                            </form>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="tit_page">
+                    <h2 class="tit">회원가입</h2>
+                </div>
+        </div>
+        <div id="main">
+            <div id="content">
+                <div id = "qnb" class="quick-navigation">
+                    <div class="bnr_qnb">
+                        <a href="/">
+                            <img class="thumb" src="https://res.kurly.com/pc/service/main/1904/bnr_quick_20190403.png" alt="퀼리티있게 샛별 배송">
+                        </a>
+                    </div>
+                    <div class="side_menu">
+                        <a href="/" class="link_menu">등급별 혜택</a>
+                        <a href="/" class="link_menu">레시피</a>
+                        <a href="/" class="link_menu">베스트 후기</a>
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="page_article">
+                        <div class="type_form member_join">
+                            <form id="form" name="frmMember" method="post" action="/"
+                            onsubmit ="return chkForm2(this)">
+                            <input type="hidden" name="mode" value="joinMember">
+                            <input type="hidden" name="check_mobile" value>
+                            <input type="hidden" name="auth_finish_code" value>
+                            <input type="hidden" name="rncheck" value>
+                            <input type="hidden" name="pakey" value>
+                            <input type="hidden" name="foreigner" value>
+                            <input type="hidden" name="passwordSkin" value>
+                            <input type="hidden" name="private2" value>
+                            <input type="hidden" name="private3" value>
+                            <input type="hidden" name="return_url" value>
+                            <p class="page_sub">
+                                <span class="ico">*</span>
+                                "필수입력사항"
+                            </p>
+                            <table class="tbl_comm">
+                                <tbody>
+                                    <tr class="fst">
+                                        <th>
+                                            아이디
+                                            <span class="ico">
+                                                *
+                                                <span class="screen_out">필수항목</span>
+                                            </span>
+                                        </th>
+                                        <td>
+                                            <input type="text" name="m_id" value maxlength="16" required fld_esssential option = "regId" label = "아이디" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합">
+                                            <input type="hidden" name="chk_id" required fld_esssential label = "아이디중복체크" value>
+                                            <a class="btn default" href="/">중복확인</a>
+                                            <p class="txt_guide square">
+                                                <span class="txt txt_case1">6자 이상의 영문 혹은 영문과 숫자를 조합</span>
+                                                <span class="txt txt_case2">아이디 중복확인</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            "비밀번호"
+                                            <span class="ico">
+                                                "*"
+                                                <span class="screen_out">필수항목</span>
+                                            </span>
+                                        </th>
+                                        <td>
+                                            <input type="password" name="password" maxlength="16" required fld_esssential option = "regPass" label = "비밀번호" placeholder="비밀번호를 입력해주세요">
+                                            <p class="txt_guide square">
+                                                <span class="txt txt_case1">10자 이상 입력</span>
+                                                <span class="txt txt_case2">영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</span>
+                                                <span class="txt txt_case3">동일한 숫자 3개 이상 연속 사용 불가</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="member_pwd">
+                                        <th>
+                                            "비밀번호확인"
+                                            <span class="ico">
+                                                "*"
+                                                <span class="screen_out">필수항목</span>
+                                            </span>
+                                        </th>
+                                        <td>
+                                            <input type="password" name="password2" maxlength="16" required fld_esssential option = "regPass" label = "비밀번호" placeholder="비밀번호를 한번 더 입력해주세요">
+                                            <p class="txt_guide square">
+                                                <span class="txt txt_case1">동일한 비밀번호를 입력해주세요</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            "이름"
+                                            <span class="ico">
+                                                "*"
+                                                <span class="screen_out">필수항목</span>
+                                            </span>
+                                        </th>
+                                        <td>
+                                            <input type="text" name="name" value required fld_esssential label = "비밀번호" placeholder="이름을 입력해주세요.">
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            "이메일"
+                                            <span class="ico">
+                                                "*"
+                                                <span class="screen_out">필수항목</span>
+                                            </span>
+                                        </th>
+                                        <td>
+                                            <input type="text" name="email" value data-email size="30" required fld_esssential option = "regEmail" label = "이메일" placeholder="예: marketkurly@kurly.com">
+                                            <input type = "hidden" name="chk_email" required fld_esssential label ="이메일중복체크">
+                                            <a href="/" onclick="chcEmail()" class="btn default">중복확인</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="field_phone">
+                                        <th>
+                                            "휴대폰"
+                                            <span class="ico">
+                                                "*"
+                                                <span class="screen_out">필수항목</span>
+                                            </span>
+                                        </th>
+                                        <td>
+                                            <div class="phone_num">
+                                                <input type="text" name="mobileInp" value pattern="[0-9]*"  class="inp" placeholder="숫자만 입력해주세요.">
+                                                <input type = "hidden" name="mobile[]" id = "mobile0" value required fld_esssential option = "regNum" label = "휴대폰">
+                                                <input type = "hidden" name="mobile[]" id = "mobile1" value required fld_esssential option = "regNum" label = "휴대폰">
+                                                <input type = "hidden" name="mobile[]" id = "mobile2" value required fld_esssential option = "regNum" label = "휴대폰">
+                                                <button id="btn_cert" class="btn default disabled" type="button">인증번호 받기</button>
+                                            </div>
+                                            <div id="codeNum" class="code_num">
+                                                <input type="text" name="auth_code" id="auth_code" value size="6" maxlength="6" pattern="[0-9]*" label ="인증번호 확인" disabled class="inp_confirm" oninput="if(value.length>6)value=value.slice(0,6);$(this).val($(this).val().replace(/[^0-9]/g,''));">
+                                                <button id="btn_cert_confirm" class="btn default disabled" type="button">인증번호 확인</button>
+                                                <p id="countdown" class="count_down"></p>
+                                            </div>
+                                            <p class="txt_guide">
+                                                <span class="txt txt_case1"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            주소
+                                            <span class="ico">
+                                                *
+                                                <span class="screen_out">필수항목</span>
+                                            </span>
+                                        </th>
+                                        <td class="field_address">
+                                            <input type="hidden" name="zonecode" value data-email size="30" required fld_esssential option = "regEmail" label = "이메일" placeholder="예: marketkurly@kurly.com">
+                                            <input type = "hidden" name="chk_email" required fld_esssential label ="이메일중복체크">
+                                            <a href="/" onclick="chcEmail()" class="btn default">중복확인</a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="select_sex">
+                                        <th>성별</th>
+                                        <td>
+                                            <label>
+                                                <input type="radio" name="sex" value="m">
+                                                <span class="ico"></span>
+                                                "남자"
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="sex" value="ㅈ">
+                                                <span class="ico"></span>
+                                                "여자"
+                                            </label>
+                                            <label class="checked">
+                                                <input type="radio" name="sex" value="n"
+                                                checked="checked">
+                                                <span class="ico"></span>
+                                                "선택안함"
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr class="birth field_birth">
+                                        <th>생년월일</th>
+                                        <td>
+                                            <div class="birth_day">
+                                                <input type="text" name="birth_year" id="birth_year" pattern="[0-9]*" value label="생년월일" size="4" maxlength="4" placeholder="YYYY">
+                                                <span class="bar">/</span>
+                                                <input type="text" name="birth[]" id="birth_month" pattern="[0-9]*" value label="생년월일" size="2" maxlength="2" placeholder="MM">
+                                                <span class="bar">/</span>
+                                                <input type="text" name="birth[]" id="birth_day" pattern="[0-9]*" value label="생년월일" size="2" maxlength="2" placeholder="DD">
+                                            </div>
+                                            <p class="txt_guide">
+                                                <span class="txt bad"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="route" id="selectRecommend">
+                                        <th>추가입력 사항</th>
+                                        <td>
+                                            <div class="group_radio">
+                                                <span class="radio_wrapper">
+                                                    <label>
+                                                        <input type="radio" name="recommend" id="recommendId" label ="추천인아이디">
+                                                        <span class="ico"></span>
+                                                        "추천인 아이디"
+                                                    </label>
+                                                </span>
+                                                <span class="radio_wrapper">
+                                                    <label>
+                                                        <input type="radio" name="recommend" id="eventName" label="참여이벤트명">
+                                                        <span class="ico"></span>
+                                                        "참여 이벤트명"
+                                                    </label>
+                                                </span>
+                                            </div>
+                                            <div class="input_wrapper">
+                                                <input type="text" name="recommid" value="inp" placeholder="추천인 아이디를 입력해주세요">
+                                                <p class="txt_guid">
+                                                    "추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다."
+                                                    <br>
+                                                    "가입 이후, 수정이 불가합니다."
+                                                    <br>
+                                                    "대소문자 및 띄어쓰기에 유의해주세요."
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="reg_agree">
+                                        <th>
+                                            "이용약관동의"
+                                            <span class="ico">"*"
+                                                <span class="screen_out">필수항목</span>
+                                            </span>
+                                        </th>
+                                        <td>
+                                            <div class="bg_dim"></div>
+                                            <div class="check">
+                                                <label class="check_agree label_all_check label_block">
+                                                    <input type="checkbox" name="agree_allcheck">
+                                                    <span class="ico"></span>
+                                                    "전체 동의합니다."
+                                                </label>
+                                                <p class="sub">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="fst"></tr>
+                                </tbody>
+                            </table>
+
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
