@@ -195,9 +195,10 @@ ul {
 
 #menubar {
   border: 1px solid rgb(55, 0, 255);
-  width: 1060px;
+  width: 1050px;
   height: 56px;
   margin: 0 auto;
+  position: relative;
 }
 #menubar .gnb_main ul {
   margin: 0 auto;
@@ -240,25 +241,26 @@ ul {
 }
 #menubar .btn-search {
   position: relative;
-  right: 5px;
-  top: 3px;
+  right: 38px;
+  top: 8px;
   width: 30px;
   height: 30px;
 }
 
 #menubar .btn_cart {
-  position: relative;
-  width: 30px;
-  height: 50px;
+  position: absolute;
+  width: 36px;
+  right: 10px;
+  height: 36px;
+  top: 9px;
   float: right;
-  background-color: red;
 }
 
 #menubar .btn_location {
   overflow: hidden;
-  position: relative;
+  position: absolute;
   right: 51px;
-  top: -9px;
+  top: 9px;
   width: 36px;
   height: 36px;
   border: 0 none;
@@ -284,18 +286,23 @@ ul {
   width: 1050px;
   padding-bottom: 0;
 }
-#content .bx-viweport {
-  position: relative;
-  height: 370px;
+.bx-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
 }
-
-.bx-viweport ul li {
+.bx-viewport {
+  width: 100%;
+  position: relative;
+  height: 371px;
+}
+.main_type1 .bx-viewport .fir-list li {
+  float: left;
   list-style: none;
   position: relative;
-  text-align: center;
-  width: 1243px;
+  width: 1653px;
 }
-.thumb_goods img {
+.main_type1 .bx-viewport .thumb_goods {
+  width: 100%;
   height: 370px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
